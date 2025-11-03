@@ -332,7 +332,7 @@ public class OverlayService extends Service implements View.OnTouchListener {
         Intent notificationIntent = new Intent(this, FlutterOverlayWindowPlugin.class);
         int pendingFlags;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-            pendingFlags = PendingIntent.FLAG_IMMUTABLE;
+            pendingFlags = PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT;
         } else {
             pendingFlags = PendingIntent.FLAG_UPDATE_CURRENT;
         }
