@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath 'com.android.tools.build:gradle:8.13.0'
     }
 }
 
@@ -26,7 +26,7 @@ android {
         namespace 'flutter.overlay.window.flutter_overlay_window'
     }
 
-    compileSdk 34
+    compileSdk 36
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
